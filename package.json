@@ -40,7 +40,8 @@
   "devDependencies": {
     "eslint": "^5.13.0",
     "eslint-config-react-app": "^3.0.6",
-    "eslint-plugin-jsx-a11y": "^6.2.0"
+    "eslint-plugin-jsx-a11y": "^6.2.0",
+    "gh-pages": "^3.2.3"
   },
   "scripts": {
     "build": "gatsby build",
@@ -49,6 +50,7 @@
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
     "lint": "eslint src/**/*.js",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -b master",
     "heroku-postbuild": "npm run build"
   }
 }

@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: flex;
@@ -10,7 +10,7 @@ const Wrapper = styled.div`
 
   svg {
     position: relative;
-    background: ${props => props.theme.colors.black};
+    background: ${(props) => props.theme.colors.black};
     height: 100%;
     width: 100%;
   }
@@ -28,9 +28,9 @@ const spawnStars = (width, height, maxSize, count) => {
         cx={randRange(0, width)}
         cy={randRange(0, height)}
         r={randRange(0.05, maxSize)}
-        style={{
-          animation: `twinkle ${randRange(1, 10)}s ease-in-out infinite`,
-        }}
+        // style={{
+        //   animation: `twinkle ${randRange(1, 10)}s ease-in-out infinite`,
+        // }}
       />
     );
   }
@@ -41,7 +41,7 @@ const Starfield = ({ width, height, stars, maxSize = 0.75, ...props }) => (
   <svg
     viewBox={`0 0 ${width} ${height}`}
     xmlns="http://www.w3.org/2000/svg"
-    style={{ position: "absolute", zIndex: -1 }}
+    style={{ position: 'absolute', zIndex: -1 }}
     preserveAspectRatio="none"
   >
     {spawnStars(width, height, maxSize, stars)}

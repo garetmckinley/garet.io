@@ -1,12 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import OSS from "../data/oss";
-import Section from "../components/Section/index";
-import Header from "../components/Header/index";
-import Content from "../components/Content/index";
-import Skill from "../components/Skill";
-import PostList from "../components/PostList";
-import List from "../components/List";
+import OSS from '../data/oss';
+import Section from '../components/Section/index';
+import Header from '../components/Header/index';
+import Content from '../components/Content/index';
+import Skill from '../components/Skill';
+import PostList from '../components/PostList';
+import List from '../components/List';
 
 const About = ({ posts }) => {
   return (
@@ -18,19 +18,20 @@ const About = ({ posts }) => {
         <div>
           <h2>Professional Skills</h2>
           <p>
-            When it comes to front-end work, I'm comfortable working with{" "}
-            <Skill>ES6</Skill>, <Skill>TypeScript</Skill>,{" "}
-            <Skill>webpack</Skill>, <Skill>babel</Skill>, <Skill>react</Skill>,{" "}
-            <Skill>react-router</Skill>, <Skill>redux</Skill>,{" "}
-            <Skill>redux-saga</Skill>, <Skill>styled-components</Skill>,{" "}
-            <Skill>emotion</Skill>, <Skill>Gatsby</Skill>,{" "}
-            <Skill>Firebase</Skill>, <Skill>Auth0</Skill>, and{" "}
+            When it comes to front-end work, I'm comfortable working with{' '}
+            <Skill>ES6</Skill>, <Skill>TypeScript</Skill>,{' '}
+            <Skill>webpack</Skill>, <Skill>rollup</Skill>, <Skill>bazel</Skill>,{' '}
+            <Skill>babel</Skill>, <Skill>react</Skill>,{' '}
+            <Skill>react-router</Skill>, <Skill>redux</Skill>,{' '}
+            <Skill>redux-saga</Skill>, <Skill>styled-components</Skill>,{' '}
+            <Skill>emotion</Skill>, <Skill>Gatsby</Skill>,{' '}
+            <Skill>Firebase</Skill>, <Skill>Auth0</Skill>, and{' '}
             <Skill>Stripe</Skill>.
           </p>
           <p>
-            With non-front-end work, I have past experience working with{" "}
-            <Skill>Node.js</Skill>, <Skill>express</Skill>,{" "}
-            <Skill>electron</Skill>, <Skill>PostgreSQL</Skill>, and{" "}
+            With non-front-end work, I have past experience working with{' '}
+            <Skill>Node.js</Skill>, <Skill>express</Skill>,{' '}
+            <Skill>electron</Skill>, <Skill>PostgreSQL</Skill>, and{' '}
             <Skill>Heroku</Skill>.
           </p>
         </div>
@@ -38,13 +39,13 @@ const About = ({ posts }) => {
         <div>
           <h2>Open Source</h2>
           <List
-            items={OSS.map(project => (
+            items={OSS.map((project) => (
               <>
                 <a href={project.url} target="_blank" rel="noopener noreferrer">
                   {project.name}
                 </a>
                 <span>
-                  : {project.description} &middot; {project.role} &middot; ★{" "}
+                  : {project.description} &middot; {project.role} &middot; ★{' '}
                   {project.stars}
                 </span>
               </>

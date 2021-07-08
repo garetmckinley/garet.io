@@ -1,20 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import Grid from "../components/Grid";
-import Link from "../components/Link";
-import Skill from "../components/Skill";
-import Avatar from "../components/Avatar/index";
-import Section from "../components/Section/index";
-import Header from "../components/Header/index";
-import Footer from "../components/Footer/index";
-import Content from "../components/Content/index";
-import Status from "../components/Status";
+import Grid from '../components/Grid';
+import Link from '../components/Link';
+import Skill from '../components/Skill';
+import Avatar from '../components/Avatar/index';
+import Section from '../components/Section/index';
+import Header from '../components/Header/index';
+import Footer from '../components/Footer/index';
+import Content from '../components/Content/index';
+import Status from '../components/Status';
 
 // Images
-import ProfilePicture from "../images/face-500.jpg";
-import GitHub from "../icons/github";
-import Twitter from "../icons/twitter";
-import CodePen from "../icons/codepen";
+import ProfilePicture from '../images/face-500.jpg';
+import GitHub from '../icons/github';
+import Twitter from '../icons/twitter';
+import CodePen from '../icons/codepen';
 
 const Intro = () => {
   return (
@@ -29,13 +29,12 @@ const Intro = () => {
         <div>
           <h2>Hello, I'm Garet McKinley</h2>
           <h3>
-            I'm a nomadic <b>Front-end Developer</b> who is passionate about
-            making the web faster and more accessible.
+            I'm a <b>Front-end Developer</b> based in <b>Austin, TX</b> who is
+            passionate about making the web faster and more accessible.
           </h3>
           <p>
-            I really <Skill className="glyph">❤</Skill> working with:{" "}
-            <Skill>React</Skill>, <Skill>Redux</Skill>, and{" "}
-            <Skill>styled-components</Skill>.
+            I <Skill className="glyph">❤</Skill> making things that help you
+            make things.
           </p>
         </div>
 
